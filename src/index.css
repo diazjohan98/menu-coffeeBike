@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0d0d0d;
+    color: #f4efe6;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(2deg);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes bounce-small {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+.animate-bounce-small {
+  animation: bounce-small 2s ease-in-out infinite;
+}
+
+@keyframes splash-zoom {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(0.85);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(80);
+    opacity: 0;
+  }
+}
+.animate-splash-zoom {
+  animation: splash-zoom 0.8s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+}
+
+@keyframes ride-bike {
+  0% {
+    transform: translateX(-85vw);
+  }
+  100% {
+    transform: translateX(110vw);
+  }
+}
+.animate-ride-bike {
+  animation: ride-bike 24s linear infinite;
+  will-change: transform;
+}
+
+@keyframes spin-svg {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spin-back {
+  animation: spin-svg 2s linear infinite;
+  transform-origin: 12px 42px;
+}
+.spin-front {
+  animation: spin-svg 1.6s linear infinite;
+  transform-origin: 56px 44px;
+}
+.spin-pedal {
+  animation: spin-svg 1.5s linear infinite;
+  transform-origin: 22px 42px;
+}
