@@ -12,7 +12,7 @@ export function Footer() {
         <div className="mb-8 flex flex-col items-center">
           <div className="w-16 h-16 rounded-full border border-[#D4AF37]/60 overflow-hidden mb-4 bg-[#0d0d0d] shadow-[0_0_25px_rgba(212,175,55,0.18)]">
             <img
-              src="/logo-coffe-bike.png"
+              src="/logo-coffe-bike1.png"
               alt="Coffee Bike Footer"
               className="w-full h-full object-cover scale-[1.04]"
             />
